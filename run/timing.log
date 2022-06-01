@@ -1,0 +1,111 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : QR_top
+Version: Q-2019.12
+Date   : Sat May 28 11:48:20 2022
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: u41/fir_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u41/reg_x_fin_reg[10]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  QR_top             tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  u41/fir_reg/CK (DFFRX4)                  0.00       0.50 r
+  u41/fir_reg/QN (DFFRX4)                  0.35       0.85 r
+  U30655/Y (INVX12)                        0.10       0.95 f
+  U16392/Y (NOR2X8)                        0.13       1.08 r
+  U7406/Y (NOR2X4)                         0.08       1.16 f
+  U16391/Y (AND2X8)                        0.15       1.31 f
+  U7391/Y (INVX6)                          0.06       1.37 r
+  U7380/Y (NAND2X6)                        0.06       1.43 f
+  U16486/Y (OAI2BB1X4)                     0.08       1.50 r
+  U30667/CO (ADDFHX4)                      0.21       1.71 r
+  U16267/Y (XOR2X4)                        0.19       1.91 r
+  U8947/Y (NAND2X4)                        0.17       2.07 f
+  U7133/Y (INVX4)                          0.13       2.20 r
+  U16619/Y (NOR2X8)                        0.08       2.29 f
+  U15489/Y (NAND2X4)                       0.10       2.39 r
+  U16624/Y (NAND2X8)                       0.11       2.50 f
+  U15877/Y (OAI2BB1X4)                     0.16       2.66 f
+  U14010/Y (INVX3)                         0.08       2.74 r
+  U15488/Y (XNOR2X4)                       0.15       2.90 f
+  U27039/ICO (CMPR42X4)                    0.22       3.12 f
+  U27030/S (CMPR42X4)                      0.73       3.85 f
+  U16697/Y (NAND2X4)                       0.14       3.99 r
+  U16695/Y (NOR2X6)                        0.08       4.07 f
+  U16212/Y (NOR2X8)                        0.09       4.17 r
+  U15864/Y (NAND3X8)                       0.13       4.30 f
+  U9151/Y (NAND2X6)                        0.09       4.39 r
+  U7512/Y (NAND2X6)                        0.07       4.46 f
+  U7511/Y (NAND3X8)                        0.08       4.54 r
+  U16396/Y (XNOR2X4)                       0.19       4.73 r
+  U16395/Y (INVX12)                        0.12       4.85 f
+  U15993/Y (BUFX20)                        0.16       5.00 f
+  U20337/Y (NAND2X2)                       0.11       5.11 r
+  U4624/Y (AND2X6)                         0.16       5.27 r
+  U4574/Y (NAND3X6)                        0.11       5.39 f
+  U17200/Y (NAND3X8)                       0.12       5.51 r
+  U4345/Y (NAND2X4)                        0.09       5.60 f
+  U12560/Y (NAND2X4)                       0.09       5.69 r
+  U17246/Y (XNOR2X4)                       0.20       5.88 r
+  U12512/Y (NAND2X6)                       0.11       6.00 f
+  U17248/Y (NAND2X6)                       0.08       6.08 r
+  U12467/Y (NAND2X6)                       0.08       6.16 f
+  U7651/Y (NAND2X6)                        0.08       6.24 r
+  U7778/Y (NAND2X8)                        0.08       6.33 f
+  U17195/Y (NAND2X8)                       0.07       6.40 r
+  U17194/Y (NAND2X8)                       0.07       6.47 f
+  U15815/Y (NAND2X6)                       0.08       6.55 r
+  U25908/Y (NAND2X6)                       0.06       6.61 f
+  U30809/S (ADDFHX4)                       0.33       6.94 r
+  U17807/Y (NAND2X6)                       0.13       7.07 f
+  U15988/Y (NAND2X6)                       0.09       7.15 r
+  U8445/Y (NAND2X6)                        0.09       7.24 f
+  U2632/Y (INVX2)                          0.11       7.35 r
+  U8979/Y (NAND2X4)                        0.08       7.44 f
+  U10002/Y (NAND3X4)                       0.11       7.55 r
+  U18813/Y (XNOR2X4)                       0.16       7.70 r
+  U9992/Y (INVX12)                         0.15       7.85 f
+  U1699/Y (INVX6)                          0.16       8.01 r
+  U25027/S (ADDFHX2)                       0.43       8.44 r
+  U18827/Y (NOR2X8)                        0.14       8.58 f
+  U18826/Y (OAI21X4)                       0.26       8.84 r
+  U1166/Y (INVX3)                          0.11       8.94 f
+  U38564/Y (OAI21X2)                       0.21       9.16 r
+  U38565/Y (AOI21X4)                       0.10       9.26 f
+  U38567/Y (XOR2X4)                        0.13       9.39 f
+  U38570/Y (OAI2BB1X4)                     0.16       9.55 f
+  u41/reg_x_fin_reg[10]/D (DFFHQX4)        0.00       9.55 f
+  data arrival time                                   9.55
+
+  clock clk (rise edge)                    9.30       9.30
+  clock network delay (ideal)              0.50       9.80
+  clock uncertainty                       -0.10       9.70
+  u41/reg_x_fin_reg[10]/CK (DFFHQX4)       0.00       9.70 r
+  library setup time                      -0.15       9.55
+  data required time                                  9.55
+  -----------------------------------------------------------
+  data required time                                  9.55
+  data arrival time                                  -9.55
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1
