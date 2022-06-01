@@ -5,7 +5,7 @@ this is a classroom project form nchu vlsi_dsp class;
 
 the detail algorithm process is describe in the VLSI_HW2.docx file;
 
-and the vcode and testbench is put in design_data  folder;
+vcode and testbench is put in design_data  folder;
 
 synthsis result is put in run folder;
 
