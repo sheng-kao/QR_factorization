@@ -1,4 +1,4 @@
-# QR_decomposition
+# QR_factorization
 the hardware design for QR factorization using cordic algorithm;
 
 this is a classroom project form nchu vlsi_dsp class;
